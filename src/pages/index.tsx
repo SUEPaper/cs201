@@ -22,7 +22,7 @@ export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Math201`}
+      title={`CS201`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main className='bg-slate-100'>
