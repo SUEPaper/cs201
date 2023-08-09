@@ -1,6 +1,6 @@
 ---
 id: loop
-sidebar_position: 9
+sidebar_position: 5
 ---
 
 # 循环和迭代

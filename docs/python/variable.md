@@ -1,6 +1,6 @@
 ---
 id: variable
-sidebar_position: 6
+sidebar_position: 2
 ---
 
 # 变量、表达式和语句
@@ -45,7 +45,7 @@ import keyword
 print (keyword.kwlist)
 ```
 
-![1](./variable%20photo/1.png)<center>开发者不允许定义和关键字相同的名字的标示符</center>
+![1](./img/1.png)<center>开发者不允许定义和关键字相同的名字的标示符</center>
 
 在Python中定义变量不需要指定类型，数据类型分为数字型和非数字型：
 

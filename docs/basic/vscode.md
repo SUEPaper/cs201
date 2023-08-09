@@ -134,7 +134,7 @@ VS Code 中运行 hello.py 很简单，只需单击编辑器右上角的 `Run Py
 
 ## Debug 代码
 
-建议你开始对 Python 语法有了一些初步认知以后，学习一下 VS Code 里面 Debug Python 代码。一个合格的程序员应该知道如何 Debug 自己写的代码，课程网站提供[用 VS Code Debug Python 代码的教程](../debug.md)
+建议你开始对 Python 语法有了一些初步认知以后，学习一下 VS Code 里面 Debug Python 代码。一个合格的程序员应该知道如何 Debug 自己写的代码，课程网站提供[用 VS Code Debug Python 代码的教程](./debug.md)
 
 ## 推荐观看视频
 

@@ -54,6 +54,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: "/",
           sidebarPath: require.resolve('./sidebars.js'),
           remarkPlugins: [math],
           rehypePlugins: [katex],
@@ -90,12 +91,30 @@ const config = {
           {
             type: 'docSidebar',
             position: 'left',
+            sidebarId: 'basicSidebar',
+            label: '基础知识',
+          },
+          {
+            type: 'docSidebar',
+            position: 'left',
             sidebarId: 'pythonSidebar',
             label: 'Python',
           },
           {
             type: 'docSidebar',
             position: 'left',
+            sidebarId: 'labSidebar',
+            label: '实验',
+          },
+          {
+            type: 'docSidebar',
+            position: 'left',
+            sidebarId: 'spiderSidebar',
+            label: '网络爬虫基础',
+          },
+          {
+            type: 'docSidebar',
+            position: 'right',
             sidebarId: 'gitSidebar',
             label: 'Git代码管理',
           },
@@ -109,48 +128,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        // links: [
-        //   {
-        //     title: 'Docs',
-        //     items: [
-        //       {
-        //         label: 'Python',
-        //         to: '/docs/intro',
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: 'Community',
-        //     items: [
-        //       {
-        //         label: 'Stack Overflow',
-        //         href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-        //       },
-        //       {
-        //         label: 'Discord',
-        //         href: 'https://discordapp.com/invite/docusaurus',
-        //       },
-        //       {
-        //         label: 'Twitter',
-        //         href: 'https://twitter.com/docusaurus',
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: 'More',
-        //     items: [
-        //       {
-        //         label: 'Blog',
-        //         to: '/blog',
-        //       },
-        //       {
-        //         label: 'GitHub',
-        //         href: 'https://github.com/facebook/docusaurus',
-        //       },
-        //     ],
-        //   },
-        // ],
-        // copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+
         copyright: `<div>本网站仅供教学使用，自创内容采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC BY-NC-SA 4.0 CN</a>许可协议发布，其他借鉴参考内容许可协议请参考原文许可协议。<div>`
       },
       prism: {
