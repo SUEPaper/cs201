@@ -2,7 +2,6 @@
 id: cats
 sidebar_position: 3
 ---
-[TOC]
 # Autocorrected Typing Software
 
 本实验项目搬运自加州大学伯克利分校的CS61A课程的[Cats项目](https://cs61a.org/proj/cats/)。
