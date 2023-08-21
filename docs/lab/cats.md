@@ -77,13 +77,17 @@ ok的主要目的是测试您的实现。
 
 如果你想以交互方式测试你的代码，你可以运行 
 
-python3 ok -q [题号] -i
+```python
+python ok -q [题号] -i
+```
 
 插入适当的问题编号（例如01）。这将运行该问题的测试，直到您的第一个失败，然后让您有机会以交互方式测试您编写的函数。
 
 您还可以通过编写以下内容来使用 OK 中的调试打印功能 
 
+```python
 print（“DEBUG：”，x）
+```
 
 这将在您的终端中产生输出，而不会导致 OK 测试因额外输出而失败。 
 
@@ -114,13 +118,13 @@ print（“DEBUG：”，x）
 在编写任何代码之前，请解锁测试以验证您对问题的理解：
 
 ```python
-python3 ok -q 01 -u
+python ok -q 01 -u
 ```
 
 完成解锁后，开始实施您的解决方案。您可以通过以下方式检查您的正确性：
 
 ```python
-python3 ok -q 01
+python ok -q 01
 ```
 
 ### **问题2（2分）**
@@ -137,13 +141,13 @@ python3 ok -q 01
 在编写任何代码之前，请解锁测试以验证您对问题的理解：
 
 ```python
-python3 ok -q 02 -u
+python ok -q 02 -u
 ```
 
 完成解锁后，开始实施您的解决方案。您可以通过以下方式检查您的正确性：
 
 ```python
-python3 ok -q 02
+python ok -q 02
 ```
 
 👩🏽‍💻👨🏿‍💻[结对编程？](https://cs61a.org/articles/pair-programming) 请记住在驾驶员和领航员角色之间交替。驱动程序控制键盘；领航员观察、提出问题并提出想法。
@@ -159,12 +163,12 @@ python3 ok -q 02
 在编写任何代码之前，请解锁测试以验证您对问题的理解：
 
 ```python
-python3 ok -q 03 -u
+python ok -q 03 -u
 ```
 
 完成解锁后，开始实施您的解决方案。您可以通过以下方式检查您的正确性：
 ```python
-python3 ok -q 03
+python ok -q 03
 ```
 
 ### **问题 4（1 分）**
@@ -175,25 +179,25 @@ python3 ok -q 03
 
 在编写任何代码之前，请解锁测试以验证您对问题的理解：
 ```python
-python3 ok -q 04 -u
+python ok -q 04 -u
 ```
 
 完成解锁后，开始实施您的解决方案。您可以通过以下方式检查您的正确性：
 
 ```python
-python3 ok -q 04
+python ok -q 04
 ```
 
 **考验你打字速度的时候到了！**您可以使用命令行来测试有关特定主题的段落的打字速度。例如，下面的命令将加载有关猫或小猫的段落。如果您好奇的话，请参阅run_typing_test 实现的函数（但它是为您定义的）。
 
 ```python
-python3 cats.py -t cats kittens
+python cats.py -t cats kittens
 ```
 
 您可以使用以下命令尝试基于 Web 的图形用户界面 (GUI)。（关闭浏览器中的选项卡后，您可能必须在终端上使用Ctrl+C或Cmd+C来退出 GUI）。
 
 ```python
-python3 cats_gui.py
+python cats_gui.py
 ```
 
 **提交您的第一阶段检查点**
@@ -201,7 +205,7 @@ python3 cats_gui.py
 检查并确保您已完成第一阶段中的所有问题：
 
 ```python
-python3 ok --score
+python ok --score
 ```
 
 然后，在检查点截止日期之前在把cats.py提交到**Gradescope**上的**Cats**检查点作业。
@@ -253,13 +257,13 @@ python3 ok --score
 在编写任何代码之前，请解锁测试以验证您对问题的理解：
 
 ```python
-python3 ok -q 05 -u
+python ok -q 05 -u
 ```
 
 完成解锁后，开始实施您的解决方案。您可以通过以下方式检查您的正确性：
 
 ```python
-python3 ok -q 05
+python ok -q 05
 ```
 
 ### **问题6（3分）**
@@ -317,13 +321,13 @@ True
 在编写任何代码之前，请解锁测试以验证您对问题的理解：
 
 ```python
-python3 ok -q 06 -u
+python ok -q 06 -u
 ```
 
 完成解锁后，开始实施您的解决方案。您可以通过以下方式检查您的正确性：
 
 ```python
-python3 ok -q 06
+python ok -q 06
 ```
 
 尝试在 GUI 中打开自动更正。它可以帮助您更快地打字吗？修正是否准确？
@@ -384,19 +388,19 @@ True
 在编写任何代码之前，请解锁测试以验证您对问题的理解：
 
 ```python
-python3 ok -q 07 -u
+python ok -q 07 -u
 ```
 
 完成解锁后，开始实施您的解决方案。您可以通过以下方式检查您的正确性：
 
 ```python
-python3 ok -q 07
+python ok -q 07
 ```
 
 再次尝试输入。修正是否更准确？
 
 ```python
-python3 cats_gui.py
+python cats_gui.py
 ```
 
 👩🏽‍💻👨🏿‍💻[结对编程？](https://cs61a.org/articles/pair-programming) 庆祝一下，休息一下，然后转换角色！
@@ -414,7 +418,7 @@ python3 cats_gui.py
 您可以final_diff通过运行以下命令来检查您的成功率：
 
 ```python
-python3 score.py
+python score.py
 ```
 
 如果您不知道从哪里开始，请尝试将feline_fixes 和minimum_mewtations代码复制粘贴到final_diff中并对其进行评分。看看他们无意中修正的拼写错误可能会给你一些想法！
@@ -461,13 +465,13 @@ report_progress(["Hello", "ths", "is"], ["Hello", "this", "is", "wrong"], ...)
 在编写任何代码之前，请解锁测试以验证您对问题的理解：
 
 ```python
-python3 ok -q 08 -u
+python ok -q 08 -u
 ```
 
 完成解锁后，开始实施您的解决方案。您可以通过以下方式检查您的正确性：
 
 ```python
-python3 ok -q 08
+python ok -q 08
 ```
 
 ### **问题9（2分）**
@@ -561,13 +565,13 @@ def match_string(match):
 在编写任何代码之前，请解锁测试以验证您对问题的理解：
 
 ```python
-python3 ok -q 09 -u
+python ok -q 09 -u
 ```
 
 完成解锁后，开始实施您的解决方案。您可以通过以下方式检查您的正确性：
 
 ```python
-python3 ok -q 09
+python ok -q 09
 ```
 
 👩🏽‍💻👨🏿‍💻[结对编程？](https://cs61a.org/articles/pair-programming) 如果您最近没有转换角色，我们建议您现在就转换角色。快完成了！
@@ -619,19 +623,19 @@ python3 ok -q 09
 在编写任何代码之前，请解锁测试以验证您对问题的理解：
 
 ```python
-python3 ok -q 10 -u
+python ok -q 10 -u
 ```
 
 完成解锁后，开始实施您的解决方案。您可以通过以下方式检查您的正确性：
 
 ```python
-python3 ok -q 10
+python ok -q 10
 ```
 
 恭喜！现在您可以在课程中与其他学生对战。设置cats.py中靠近底部的enable_multiplayer为True并快速输入！
 
 ```python
-python3 cats_gui.py
+python cats_gui.py
 ```
 
 ## **第四阶段：效率（额外学分）**
@@ -756,26 +760,26 @@ Python 装饰器允许您修改预先存在的函数而不更改函数的结构�
 在编写任何代码之前，请解锁测试以验证您对问题的理解：
 
 ```python
-python3 ok -q EC -u
+python ok -q EC -u
 ```
 
 完成解锁后，开始实施您的解决方案。您可以通过以下方式检查您的正确性：
 
 ```python
-python3 ok -q EC
+python ok -q EC
 ```
 
 ## **项目提交**
 运行ok所有问题以确保所有测试均已解锁并通过：
 
 ```python
-python3 ok
+python ok
 ```
 
 您还可以检查您在项目每个部分的分数：
 
 ```python
-python3 ok --score
+python ok --score
 ```
 
 一旦您满意，请上传cats.py到Gradescope 上的Cats作业来提交此作业。有关如何执行此操作的复习，请参阅[实验 00](https://cs61a.org/lab/lab00/#task-b-submitting-the-assignment)。
