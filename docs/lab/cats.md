@@ -24,16 +24,9 @@ sidebar_position: 3
 
 ## **介绍**
 
-**重要提交注意事项：**对于全额学分：
-
-- **在7 月 11 日星期二**之前提交并完成第 1 阶段，价值 1 分。
-- **请在7 月 18 日星期二**之前完成第 1、2 和 3 阶段的提交。
-
 试着按顺序尝试问题，因为后面的一些问题建立在前面问题的基础上，因此在运行ok测试时也是如此。
 
 整个项目可以与合作伙伴一起完成。
-
-**在7 月 17 日星期一**之前提交整个项目即可获得 1 个奖励积分， 完成第 4 阶段还可获得 1 个奖励积分。
 
 在此项目中，您将编写一个测量打字速度的程序。此外，您还将实现键入自动更正的功能，即在用户键入单词后尝试更正单词拼写。这个项目的灵感来自[typeracer](https://play.typeracer.com/)。
 
@@ -57,13 +50,12 @@ sidebar_position: 3
 - images：图像目录。
 - ok, proj02.ok, tests: 测试文件。
 ## **后勤**
-该项目得分为21分。20 分用于正确性，1 分用于在检查点日期之前提交第一阶段。
 
 您将上交以下文件：
 
 - cats.py
 
-您无需修改​​或提交任何其他文件即可完成该项目。要提交项目，**请将所需的文件提交给相应的 Gradescope 作业。**
+您无需修改​​或提交任何其他文件即可完成该项目。
 
 对于我们要求您完成的功能，我们可能会提供一些初始代码。如果您不想使用该代码，请随意删除它并从头开始。您还可以根据需要添加新的函数定义。
 
@@ -90,14 +82,6 @@ print（“DEBUG：”，x）
 ```
 
 这将在您的终端中产生输出，而不会导致 OK 测试因额外输出而失败。 
-
-## **入门视频**
-
-要观看这些视频，您应该登录您的 berkeley.edu 电子邮件。
-
-入门视频 (enable JavaScript) 
-
-[YouTube 链接](https://youtu.be/playlist?list=PLx38hZJ5RLZcJ1ha_1BZaz2l_B3g_FKOi)
 
 ## **第一阶段：打字**
 
@@ -150,7 +134,6 @@ python ok -q 02 -u
 python ok -q 02
 ```
 
-👩🏽‍💻👨🏿‍💻[结对编程？](https://cs61a.org/articles/pair-programming) 请记住在驾驶员和领航员角色之间交替。驱动程序控制键盘；领航员观察、提出问题并提出想法。
 ### **问题3（2分）**
 实现 accuracy，需要一个typed段落和一个source 段落。它返回 typed中与source中相应单词完全匹配的单词的百分比。大小写和标点符号也必须匹配。这里的“对应”意味着两个单词必须出现在typed和source中的相同索引处— 两个段落的第一个单词必须匹配，两个单词的第二个单词必须匹配，依此类推。
 
@@ -208,11 +191,8 @@ python cats_gui.py
 python ok --score
 ```
 
-然后，在检查点截止日期之前在把cats.py提交到**Gradescope**上的**Cats**检查点作业。
-
 当您运行ok命令时，您仍然会看到一些测试被锁定，因为您尚未完成整个项目。如果您完成了到目前为止的所有问题，您将获得检查点的满分。
 
-👩🏽‍💻👨🏿‍💻[结对编程？](https://cs61a.org/articles/pair-programming) 这将是转换角色的好时机。转换角色可确保你们都能从担任每个角色的学习经历中受益。
 
 ## **第二阶段：自动更正**
 
@@ -332,8 +312,6 @@ python ok -q 06
 
 尝试在 GUI 中打开自动更正。它可以帮助您更快地打字吗？修正是否准确？
 
-👩🏽‍💻👨🏿‍💻[结对编程？](https://cs61a.org/articles/pair-programming) 请记住在驾驶员和领航员角色之间交替。驱动程序控制键盘；领航员观察、提出问题并提出想法。
-
 ### **问题7（3分）**
 
 实现minimum_mewtations ，这是一个 diff 函数，它返回将typed单词转换为source单词所需的最少编辑操作数。
@@ -403,7 +381,6 @@ python ok -q 07
 python cats_gui.py
 ```
 
-👩🏽‍💻👨🏿‍💻[结对编程？](https://cs61a.org/articles/pair-programming) 庆祝一下，休息一下，然后转换角色！
 
 ### **（可选）扩展：最终差异（0 分）**
 
@@ -573,8 +550,6 @@ python ok -q 09 -u
 ```python
 python ok -q 09
 ```
-
-👩🏽‍💻👨🏿‍💻[结对编程？](https://cs61a.org/articles/pair-programming) 如果您最近没有转换角色，我们建议您现在就转换角色。快完成了！
 
 ### **问题10（2分）**
 
@@ -768,8 +743,7 @@ python ok -q EC -u
 ```python
 python ok -q EC
 ```
-
-## **项目提交**
+##  完结
 运行ok所有问题以确保所有测试均已解锁并通过：
 
 ```python
@@ -782,20 +756,3 @@ python ok
 python ok --score
 ```
 
-一旦您满意，请上传cats.py到Gradescope 上的Cats作业来提交此作业。有关如何执行此操作的复习，请参阅[实验 00](https://cs61a.org/lab/lab00/#task-b-submitting-the-assignment)。
-
-您可以通过单击提交右侧您姓名下方的**+ 添加小组成员，将合作伙伴添加到您的 Gradescope 提交中。**只有一名合作伙伴需要向 Gradescope 提交。
-
-[**CS 61A**](https://cs61a.org/)
-- [每周计划](https://cs61a.org/weekly)
-- [工作时间](https://cs61a.org/office-hours)
-- [职员](https://cs61a.org/staff)
-[**资源**](https://cs61a.org/resources)
-- [学习指南](https://cs61a.org/articles/studying)
-- [调试指南](https://cs61a.org/articles/debugging)
-- [构图指南](https://cs61a.org/articles/composition)
-- [结对编程](https://cs61a.org/articles/pair-programming)
-[**政策**](https://cs61a.org/articles/about)
-- [作业](https://cs61a.org/articles/about#assignments)
-- [考试](https://cs61a.org/articles/about#exams)
-- [等级](https://cs61a.org/articles/about#grading)
