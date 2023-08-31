@@ -15,7 +15,8 @@ sidebar_position: 3
 :::
 
 # **项目 2：CS 61A 自动更正打字软件** 
-- [**猫.zip**](https://cs61a.org/proj/cats/cats.zip)
+
+- [**cats.zip**](https://cs61a.org/proj/cats/cats.zip)
 
 ![ref1](./cats%20picture/cats_typing.gif)
 
@@ -25,8 +26,6 @@ sidebar_position: 3
 ## **介绍**
 
 试着按顺序尝试问题，因为后面的一些问题建立在前面问题的基础上，因此在运行ok测试时也是如此。
-
-整个项目可以与合作伙伴一起完成。
 
 在此项目中，您将编写一个测量打字速度的程序。此外，您还将实现键入自动更正的功能，即在用户键入单词后尝试更正单词拼写。这个项目的灵感来自[typeracer](https://play.typeracer.com/)。
 
