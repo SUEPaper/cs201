@@ -1,6 +1,6 @@
 ---
 id: function
-sidebar_position: 4
+sidebar_position: 14
 ---
 
 # 函数和高阶函数

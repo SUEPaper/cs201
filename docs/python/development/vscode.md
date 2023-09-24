@@ -1,6 +1,6 @@
 ---
 id: vscode
-sidebar_position: 3
+sidebar_position: 1
 ---
 
 # VS Code 搭建 Python 开发环境
@@ -131,6 +131,22 @@ VS Code 中运行 hello.py 很简单，只需单击编辑器右上角的 `Run Py
 ![](./img/vscode_09.png)
 
 ## 终端运行 Python 代码
+
+请打开终端（Windows 为PowerShell，Linux和macOS用户，你已经是一个很成熟的Unix用户了，请自行Google搜索对应的内容）。通过 `cd` 命令，进入你所创建的 `HELLO` 文件夹下，以下是我的电脑中的路径：
+
+```bash
+cd C:\Users\AHZ\Desktop\HELLO
+```
+
+![](img/powershell.png)
+
+输入如下命令：
+
+```bash
+python3 hello.py
+```
+
+然后你就能在终端里看到 `Hello World` 的信息被打印出来。
 
 ## Debug 代码
 

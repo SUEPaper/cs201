@@ -92,7 +92,7 @@ const config = {
             type: 'docSidebar',
             position: 'left',
             sidebarId: 'basicSidebar',
-            label: '基础知识',
+            label: '预学习',
           },
           {
             type: 'docSidebar',
