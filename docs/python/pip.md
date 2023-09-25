@@ -1,6 +1,6 @@
 ---
 id: pip
-sidebar_position: 13
+sidebar_position: 22
 ---
 
 # pip包管理

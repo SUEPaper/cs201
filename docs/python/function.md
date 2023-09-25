@@ -1,9 +1,9 @@
 ---
 id: function
-sidebar_position: 14
+sidebar_position: 9
 ---
 
-# 函数和高阶函数
+# 函数与作用域
 
 ## Python 函数
 

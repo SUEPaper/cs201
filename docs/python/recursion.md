@@ -1,6 +1,6 @@
 ---
 id: recursion
-sidebar_position: 16
+sidebar_position: 9
 ---
 
 # 递归
