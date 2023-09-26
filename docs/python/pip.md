@@ -25,7 +25,7 @@ pip提供了对Python包快捷有效的管理，当我们的Python版本在2.7.9
 
 别人开发包，我们直接复用别人的代码不就好了吗。但是这有一些问题，别人提供的代码中的定义万一和我的代码有很多冲突怎么办，我能拿过来就用吗？或许修修补补还是可以实现的。但如果我们并不了解别人代码，那就非常困难了，成本太高，或许还会改出 bug。于是，包就出现了，它通过一些约定俗成的规则防止一些问题发生，比如名称冲突，简化我们的工作。我们要使用别人的代码，只要 import 即可。
 
-语言一般只提供最核心的能力，其他功能都会通过包扩展，包一般可分两类，标准库和第三方库，标准库即官方提供给的，比如 Python 中的 math、random、functools 等包，第三方包，第三方个人或组织开发的包，比如流行的数据分析处理库 numpy 和 pandas，web 领域的三个框架 django、flask 和 tornado。
+语言一般只提供最核心的能力，其他功能都会通过包扩展，包一般可分两类，标准库和第三方库，**标准库即官方提供给的**，比如 Python 中的 math、random、functools 等包，**第三方包是由第三方个人或组织开发的包**，比如流行的数据分析处理库 numpy 和 pandas，web 领域的三个框架 django、flask 和 tornado。
 
 ### 为什么要通过 pip 下载？
 
@@ -47,40 +47,44 @@ pip提供了对Python包快捷有效的管理，当我们的Python版本在2.7.9
 
 ![7](./img/pip_7.png)
 
-### 使用中国源
+### 使用中国镜像加速
 
-当我们进行pip下载时，使用外国的源会导致下载速度很慢，所以在使用之前我们首先要学会如何使用中国源。
+当我们进行pip下载时，使用外国的源会导致下载速度很慢，所以在使用之前我们首先要学会如何使用中国大陆镜像对下载进行加速。
 
-首先我们需要升级一下pip包，保证他的版本在10.0.0以上
+首先我们需要升级一下pip包，保证他的版本在10.0.0以上，请打开终端进行实操。
 
-```cmd
+```bash
 python -m pip install --upgrade pip
 ```
 
 ![3](./img/pip_3.png)
 
-然后更换中国源
+然后更换中国源（这里我们采用了清华镜像源）,请打开终端进行实操。
 
-```cmd
+```bash
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
 ![8](./img/pip_8.png)
 
-当然，如果使用示例中的清华源依然下载卡顿，我们还可以选择别的中国源（http不行就换https源）：
+当然，如果使用示例中的清华源依然下载卡顿，我们还可以选择别的中国源：
 
 ```txt
-清华：https://pypi.tuna.tsinghua.edu.cn/simple
-阿里云：https://mirrors.aliyun.com/pypi/simple/
-中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/
-华中理工大学：http://pypi.hustunique.com/
-山东理工大学：http://pypi.sdutlinux.org/
-豆瓣：http://pypi.douban.com/simple/
+清华大学：https://pypi.tuna.tsinghua.edu.cn/simple
+中国科技大学：https://pypi.mirrors.ustc.edu.cn/simple
+北京大学：https://mirrors.pku.edu.cn/pypi/web/simple
+南京大学：https://mirror.nju.edu.cn/pypi/web/simple
+上海交通大学：https://mirror.sjtu.edu.cn/pypi/web/simple
+西安交通大学：https://mirrors.xjtu.edu.cn/pypi/simple
+南方科技大学：https://mirrors.sustech.edu.cn/pypi/simple
+阿里云：https://mirrors.aliyun.com/pypi/simple
+腾讯云：https://mirrors.cloud.tencent.com/pypi/simple
+华为云：https://repo.huaweicloud.com/repository/pypi/simple
 ```
 
 ### 查看pip命令语句（show help）
 
-```py
+```bash
 pip help
 pip --h
 ```
@@ -89,15 +93,30 @@ pip --h
 
 ### 下载指定的Python包
 
-```py
+```bash
 pip install package_name
 ```
+
+请在终端里面输入如下命令，安装 `Numpy, Matplotlib, Scipy, FastAPI`这几个库，我们提供其中的一个案例，请举一反三安装其他的库。
+
+```bash
+pip install numpy
+```
+:::tip 小提示
+
+各个第三方软件包官方网站基本都有如何使用pip安装软件包本身的教程，请仔细阅读官方网站。
+- Numpy: https://numpy.org/install/
+- Matplotlib: https://matplotlib.org/stable/users/installing/index.html
+- Scipy: https://scipy.org/install/
+- FastAPI: https://fastapi.tiangolo.com/tutorial/#install-fastapi
+
+:::
 
 也可在被安装包的名称后加上版本号以安装指定版本的Python包，如pip install package_name==1.2.3。
 
 ### 卸载指定的Python包
 
-```py
+```bash
 pip uninstall package_name
 ```
 
@@ -105,7 +124,7 @@ pip uninstall package_name
 
 ### 查看已安装的库
 
-```py
+```bash
 pip list
 ```
 
@@ -113,7 +132,7 @@ pip list
 
 ### 查看当前可升级的库
 
-```py
+```bash
 pip list -o
 ```
 
@@ -121,7 +140,7 @@ pip list -o
 
 ### 查看pip版本（show version and exit）
 
-```py
+```bash
 pip --version
 ```
 
@@ -129,7 +148,7 @@ pip --version
 
 ### 升级Python包
 
-```py
+```bash
 pip install --upgrade package_name
 pip install --U package_name
 ```
