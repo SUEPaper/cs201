@@ -13,24 +13,22 @@ sidebar_position: 7
 
 :::
 
-## if 语句
+迄今为止，我们写的Python代码都是一条一条语句顺序执行，这种代码结构通常称之为顺序结构, 然而仅有顺序结构并不能解决所有的问题。
 
-Python条件语句是通过一条或多条语句的执行结果（True或者False）来决定执行的代码块，执行语句可以是单个语句或语句块。判断条件可以是任何表达式，任何非零、或非空（null）的值均为true。
+Python条件语句是通过一条或多条语句的执行结果（True或者False）来决定执行的代码块，执行语句可以是单个语句或语句块。判断条件可以是任何表达式，任何非零、或非空（null）的值均为True。
 
-```py
+在`cs201-learn`的文件夹，用 VS Code 新建一个名字叫做 `if-else01.py` 的 Python 源代码文件。
+输入如下代码，并运行
+
+```python
 if True:
     print("Hello World")
 print("Goog Bye")
-------------------------
-Hello World
-Goog Bye
-
 
 if False:
     print("Hello Python")
 print("Goog Bye")
-------------------------
-Goog Bye
+
 ```
 
 :::tip 代码缩进
@@ -39,50 +37,59 @@ Goog Bye
 
 :::
 
-### if else 语句
+## if else 语句
 
-```py
-if False:
-    print("No executed")
+在`cs201-learn`的文件夹，用 VS Code 新建一个名字叫做 `if-else02.py` 的 Python 源代码文件。
+输入如下代码，并运行
+
+```python
+username = input('Please enter user name: ')
+password = input('Please enter password: ')
+# 用户名是admin且密码是123456则身份验证成功否则身份验证失败
+if username == 'admin' and password == '123456':
+    print('Authentication successful')
 else:
-    print("Executed")
-------------------------
-Executed
+    print('Authentication failed')
 ```
 
-### if elif else
+## if elif else
 
-```py
-age = int(input("Please your age>>:"))
-if 0 < age and age <= 20:
-    print("teenager")
-elif 20 < age and age <= 40:
-    print("Man")
-elif 40 < age and age <= 60:
-    print("Old")
+在分段函数求值时，我们可以用到这种结构。如下是一个分段函数的案例：
+
+$$
+f(x)= \begin{cases}
+    3x - 5,  & (x > 1) \\
+    x + 2, & (-1 \le x \le 1) \\
+    5x + 3, & (x < -1)
+\end{cases}
+$$
+
+在`cs201-learn`的文件夹，用 VS Code 新建一个名字叫做 `if-else03.py` 的 Python 源代码文件。
+输入如下代码，并运行
+
+```python
+x = float(input('x = '))
+if x > 1:
+    y = 3 * x - 5
+elif x >= -1:
+    y = x + 2
 else:
-    print("Died")
-------------------------
-Please your age>>:30
-Man
+    y = 5 * x + 3
+print('f(%.2f) = %.2f' % (x, y))
 ```
 
-### if嵌套
+## if 嵌套
 
-```py
-age = int(input("Please your age>>:"))
-if age >= 0:
-    if 0 < age and age <= 20:
-        print("teenager")
-    elif 20 < age and age <= 40:
-        print("Man")
-    elif 40 < age and age <= 60:
-        print("Old")
+当然根据实际开发的需要，分支结构是可以嵌套的, 那么我们就需要在if的内部构造出一个新的分支结构，同理elif和else中也可以再构造新的分支，我们称之为嵌套的分支结构，也就是说上面的 `if-else03.py` 的源代码可以改写成下面的样子，请实操并且并运行。
+
+```python
+x = float(input('x = '))
+if x > 1:
+    y = 3 * x - 5
+else:
+    if x >= -1:
+        y = x + 2
     else:
-        print("Died")
-else:
-    print("Your age error")
--------------------------
-Please your age>>:48
-Old
+        y = 5 * x + 3
+print('f(%.2f) = %.2f' % (x, y))
 ```
