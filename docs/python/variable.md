@@ -73,6 +73,8 @@ print(keyword.kwlist)
 输入如下代码，并运行
 
 ```python
+# -*- coding: utf-8 -*-
+
 """
 使用变量保存数据并进行加减乘除运算
 """
@@ -90,6 +92,8 @@ print(a / b)    # 26.75
 输入如下代码，并运行。
 
 ```python
+# -*- coding: utf-8 -*-
+
 """
 使用type()检查变量的类型
 """
@@ -119,6 +123,8 @@ print(type(e))    # <class 'bool'>
 输入如下代码，并运行。
   
 ```python
+# -*- coding: utf-8 -*-
+
 """
 使用input()函数获取键盘输入(字符串)
 使用int()函数将输入的字符串转换成整数
@@ -148,6 +154,8 @@ print(a+b)
 输入如下代码，并运行。
 
 ```python
+# -*- coding: utf-8 -*-
+
 """
 使用print()函数输出带占位符的字符串
 """

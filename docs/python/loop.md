@@ -32,6 +32,8 @@ else:
 输入如下代码，并运行
 
 ```python
+# -*- coding: utf-8 -*-
+
 sum = 0
 for x in range(101):
     sum += x
@@ -71,7 +73,9 @@ print(sum)
 在`cs201-learn`的文件夹，用 VS Code 新建一个名字叫做 `loop02.py` 的 Python 源代码文件。
 输入如下代码，并运行
 
-```bash
+```python
+# -*- coding: utf-8 -*-
+
 adj = ["有趣的", "困难的", "奇妙的"]
 courses = ["数值计算方法实训课", "英语课", "语文课"]
 for x in adj:
@@ -105,6 +109,8 @@ while 判断条件：
 输入如下代码，并运行
 
 ``` py
+# -*- coding: utf-8 -*-
+
 sum = 0
 count = 0
 while count <= 100:
@@ -119,6 +125,8 @@ print(sum)
 输入如下代码，并运行
 
 ```py
+# -*- coding: utf-8 -*-
+
 count = 0
 while count < 10:
     print (count, " 小于 10")

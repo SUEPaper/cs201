@@ -21,6 +21,8 @@ Python条件语句是通过一条或多条语句的执行结果（True或者Fals
 输入如下代码，并运行
 
 ```python
+# -*- coding: utf-8 -*-
+
 if True:
     print("Hello World")
 print("Goog Bye")
@@ -43,6 +45,8 @@ print("Goog Bye")
 输入如下代码，并运行
 
 ```python
+# -*- coding: utf-8 -*-
+
 username = input('Please enter user name: ')
 password = input('Please enter password: ')
 # 用户名是admin且密码是123456则身份验证成功否则身份验证失败
@@ -68,6 +72,8 @@ $$
 输入如下代码，并运行
 
 ```python
+# -*- coding: utf-8 -*-
+
 x = float(input('x = '))
 if x > 1:
     y = 3 * x - 5
@@ -83,6 +89,8 @@ print('f(%.2f) = %.2f' % (x, y))
 当然根据实际开发的需要，分支结构是可以嵌套的, 那么我们就需要在if的内部构造出一个新的分支结构，同理elif和else中也可以再构造新的分支，我们称之为嵌套的分支结构，也就是说上面的 `if-else03.py` 的源代码可以改写成下面的样子，请实操并且并运行。
 
 ```python
+# -*- coding: utf-8 -*-
+
 x = float(input('x = '))
 if x > 1:
     y = 3 * x - 5

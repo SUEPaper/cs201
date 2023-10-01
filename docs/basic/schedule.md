@@ -42,3 +42,8 @@ sidebar_position: 2
 1. 一般来说, 百度对英文关键词的处理能力比不上Google。同时百度的广告太多，关键词检索首页命中率太低，我们认为用百度搜索技术问题纯属在浪费生命，而且是大大的浪费生命。强烈推荐Google搜索，至于如何访问Google搜索，请自行了解相关知识，或者使用我们表格中提供的Google搜索镜像。
 2. 通常来说, 英文维基百科比中文维基百科和百度百科包含更丰富的内容. 为了说明为什么要使用英文维基百科, 请你对比词条前束范式分别在[百度百科](https://baike.baidu.com/item/%E5%89%8D%E6%9D%9F%E8%8C%83%E5%BC%8F), [中文维基百科](http://zh.wikipedia.org/wiki/%E5%89%8D%E6%9D%9F%E8%8C%83%E5%BC%8F)和[英文维基百科](https://en.wikipedia.org/wiki/Prenex_normal_form)中的内容。
 3. [stackoverflow](https://stackoverflow.com/)是一个程序设计领域的问答网站, 里面除了技术性的问题([What is ":-!!" in C code?](https://stackoverflow.com/questions/9229601/what-is-in-c-code/9229793))之外, 也有一些学术性([Is there a regular expression to detect a valid regular expression?](https://stackoverflow.com/questions/172303/is-there-a-regular-expression-to-detect-a-valid-regular-expression)) 和一些有趣的问题([What is the “-->” operator in C++?](https://stackoverflow.com/questions/1642028/what-is-the-operator-in-c))。
+
+
+## Other
+
+本课程网站将会提供 Python 网络爬虫，Python MongoDB 基础以及 Python Web 基础的入门级教程，作为抛砖引玉的资料供大家提升视野和自我学习更多的内容，更多想学习的内容请大家自行使用 Google 搜索查到对应的内容。

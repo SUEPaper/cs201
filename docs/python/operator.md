@@ -40,6 +40,8 @@ Python支持多种运算符，下表大致按照优先级从高到低的顺序�
 输入如下代码，并运行
 
 ```python
+# -*- coding: utf-8 -*-
+
 a = 10
 b = 3
 a += b        # 相当于：a = a + b
@@ -97,10 +99,12 @@ x ** y
 
 ## 代码示例
 
-在`cs201-learn`的文件夹，用 VS Code 新建一个名字叫做 `operator01.py` 的 Python 源代码文件。
+在`cs201-learn`的文件夹，用 VS Code 新建一个名字叫做 `operator02.py` 的 Python 源代码文件。
 输入如下代码，并运行
 
 ```python
+# -*- coding: utf-8 -*-
+
 """
 比较运算符和逻辑运算符的使用
 """

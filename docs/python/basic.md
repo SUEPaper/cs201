@@ -3,7 +3,7 @@ id: basic
 sidebar_position: 3
 ---
 
-# Python 基础
+# 基础
 
 :::caution 必读
 
@@ -66,3 +66,27 @@ print("你好, 世界！")
 点击 VS Code 中的运行按钮，便可在VS Code 提供的终端窗口中看到如下内容：
 
 ![](./img/basic03.png)
+
+:::caution 输出出现中文乱码
+
+Python中默认的编码格式是 ASCII 格式，在没修改编码格式时无法正确打印汉字，所以在读取中文时会报错或者乱码。
+
+解决方法为只要在文件开头加入 `# -*- coding: UTF-8 -*-` 或者 `# coding=utf-8` 就行了。
+
+将`basic.py`中的代码更改成如下内容：
+
+```python
+# -*- coding: utf-8 -*-
+
+"""
+第一个Python程序 - hello, world!
+向伟大的Dennis M. Ritchie先生致敬
+
+Version: 1.0
+Author: 纸上得来终觉浅
+"""
+# print('hello, world!')
+print("你好, 世界！")
+```
+
+:::

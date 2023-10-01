@@ -35,6 +35,8 @@ foo()
 在`cs201-learn`的文件夹中新建一个文件夹叫做`module_demo`，用 VS Code 在`module_demo`文件夹中新建一个名字叫做 `module1.py` 的 Python 源代码文件，输入如下代码。
 
 ```python
+# -*- coding: utf-8 -*-
+
 def foo():
     print('hello, world!')
 ```
@@ -42,6 +44,8 @@ def foo():
 用 VS Code 在`module_demo`文件夹中新建一个名字叫做 `module2.py` 的 Python 源代码文件，输入如下代码。
 
 ```python
+# -*- coding: utf-8 -*-
+
 def foo():
     print('goodbye, world!')
 ```
@@ -49,6 +53,8 @@ def foo():
 用 VS Code 在`module_demo`文件夹中新建一个名字叫做 `test.py` 的 Python 源代码文件，输入如下代码，并且运行 `test.py` 文件。
 
 ```python
+# -*- coding: utf-8 -*-
+
 from module1 import foo
 
 # 输出hello, world!
@@ -63,6 +69,8 @@ foo()
 也可以按照如下所示的方式来区分到底要使用哪一个`foo`函数，将  `test.py` 代码改成如下，并运行 `test.py` 文件。
 
 ```python
+# -*- coding: utf-8 -*-
+
 import module1 as m1
 import module2 as m2
 
@@ -73,6 +81,8 @@ m2.foo()
 但是如果将代码写成了下面的样子，那么程序中调用的是最后导入的那个`foo`，因为后导入的foo覆盖了之前导入的`foo`。
 
 ```python
+# -*- coding: utf-8 -*-
+
 from module1 import foo
 from module2 import foo
 
@@ -81,6 +91,8 @@ foo()
 ```
 
 ```python
+# -*- coding: utf-8 -*-
+
 from module2 import foo
 from module1 import foo
 
@@ -94,6 +106,8 @@ foo()
 用 VS Code 在`module_demo`文件夹中新建一个名字叫做 `module3.py` 的 Python 源代码文件，输入如下代码。
 
 ```python
+# -*- coding: utf-8 -*-
+
 def foo():
     pass
 
@@ -114,6 +128,8 @@ if __name__ == '__main__':
 将  `test.py` 代码改成如下，并运行 `test.py` 文件。
 
 ```python
+# -*- coding: utf-8 -*-
+
 import module3
 
 # 导入module3时 不会执行模块中if条件成立时的代码 因为模块的名字是module3而不是__main__
@@ -124,6 +140,8 @@ import module3
 从现在开始我们可以将Python代码按照下面的格式进行书写，这一点点的改进其实就是在我们理解了函数和作用域的基础上跨出的巨大的一步。
 
 ```python
+# -*- coding: utf-8 -*-
+
 def main():
     # Todo: Add your code here
     pass
@@ -160,6 +178,8 @@ cs201-learn
 用VS Code在`package0/module0.py`文件中输入如下代码：
 
 ```python
+# -*- coding: utf-8 -*-
+
 def module_info():
   print("This is package0's module0")
 ```
@@ -167,6 +187,8 @@ def module_info():
 用VS Code在`package1/module0.py`文件中输入如下代码：
 
 ```python
+# -*- coding: utf-8 -*-
+
 def module_info():
   print("This is package1's module0")
 ```
@@ -174,6 +196,8 @@ def module_info():
 用VS Code在`test_package.py`文件中输入如下代码，并且运行代码：
 
 ```python
+# -*- coding: utf-8 -*-
+
 import package0.module0
 import package1.module0 as p1_m0
 
@@ -211,6 +235,8 @@ AttributeError: 'module' object has no attribute 'module0'
 用VS Code将`test_package.py`文件修改如下，并且运行代码：
 
 ```python
+# -*- coding: utf-8 -*-
+
 # from package0 import *  # 可以导入 package0 包中所有模块
 from package0 import module0
 from package0.module0 import module_info

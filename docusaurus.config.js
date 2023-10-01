@@ -115,14 +115,14 @@ const config = {
           {
             type: 'docSidebar',
             position: 'left',
-            sidebarId: 'webSidebar',
-            label: 'Python Web基础',
+            sidebarId: 'mongodbSidebar',
+            label: 'Python MongoDB基础',
           },
           {
             type: 'docSidebar',
             position: 'left',
-            sidebarId: 'mongodbSidebar',
-            label: 'Python MongoDB基础',
+            sidebarId: 'webSidebar',
+            label: 'Python Web基础',
           },
           {
             type: 'docSidebar',

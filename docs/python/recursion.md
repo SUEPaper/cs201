@@ -23,6 +23,8 @@ sidebar_position: 10
 输入如下代码，并运行
 
 ```python
+# -*- coding: utf-8 -*-
+
 def factorial(n):
     if n == 0 or n == 1:
         return 1
@@ -39,6 +41,8 @@ if __name__ == "__main__":
 输入如下代码，并运行
 
 ```python
+# -*- coding: utf-8 -*-
+
 def fibonacci(n):
     if n == 0 or n == 1:
         return n
@@ -71,6 +75,8 @@ $$
 输入如下代码，并运行
 
 ```python
+# -*- coding: utf-8 -*-
+
 def find_power(a, b):
     if b == 0:
         return 1
@@ -220,6 +226,8 @@ factorial(0, 24)
 输入如下代码，并运行
 
 ```python
+# -*- coding: utf-8 -*-
+
 def facttail(n, a):
      
     if n < 0:

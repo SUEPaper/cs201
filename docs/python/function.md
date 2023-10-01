@@ -29,6 +29,8 @@ $$
 输入如下代码，并运行
 
 ```python
+# -*- coding: utf-8 -*-
+
 m = int(input('m = '))
 n = int(input('n = '))
 fm = 1
@@ -117,6 +119,8 @@ def <name>(<formal parameters>):
 将 `function01.py` 文件的代码更改如下，并运行。
 
 ```python
+# -*- coding: utf-8 -*-
+
 def fac(num):
     """求阶乘"""
     result = 1
@@ -138,6 +142,8 @@ print(fac(m) // fac(n) // fac(m - n))
 输入如下代码，并运行
 
 ```python
+# -*- coding: utf-8 -*-
+
 def print_pattern():
     size = 4
     for i in range(size):
@@ -159,6 +165,8 @@ print_pattern()
 输入如下代码，并运行
 
 ```python
+# -*- coding: utf-8 -*-
+
 def print_pattern(num_rows):
     for i in range(num_rows):
         for num_cols in range(num_rows-i):
@@ -209,6 +217,8 @@ print("-----------------------------")
 输入如下代码，并运行
 
 ```python
+# -*- coding: utf-8 -*-
+
 def print_pattern(num_rows, char):
 	for i in range(num_rows):
 		for num_cols in range(num_rows-i):
@@ -263,6 +273,8 @@ A
 输入如下代码，并运行
 
 ```python
+# -*- coding: utf-8 -*-
+
 def get_rectangle_area(length, width):
     return length * width
 area = get_rectangle_area(4, 5)
@@ -280,6 +292,8 @@ Python中的函数是可以返回多个值的，在`cs201-learn`的文件夹，�
 输入如下代码，并运行
 
 ```python
+# -*- coding: utf-8 -*-
+
 def get_rectangle_info(length, width):
     area = length * width
     perimeter = 2 * (length + width)
@@ -295,6 +309,8 @@ print(perimeter)
 输入如下代码，并运行。
 
 ```python
+# -*- coding: utf-8 -*-
+
 def print_pattern(num_rows, char="*"):
 	for i in range(num_rows):
 		for num_cols in range(num_rows-i):

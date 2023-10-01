@@ -60,6 +60,8 @@ Python为字符串类型提供了非常丰富的运算符，我们可以使用`+
 输入如下代码，并运行
 
 ```python
+# -*- coding: utf-8 -*-
+
 s1 = 'hello ' * 3
 print(s1) # hello hello hello 
 s2 = 'world'
@@ -84,6 +86,8 @@ print(str2[-3:-1]) # 45
 输入如下代码，并运行
 
 ```python
+# -*- coding: utf-8 -*-
+
 str1 = 'hello, world!'
 # 通过内置函数len计算字符串的长度
 print(len(str1)) # 13
