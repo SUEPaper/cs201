@@ -14,7 +14,7 @@ sidebar_position: 3
 
 :::
 
-# **项目 2：CS 61A 自动更正打字软件** 
+# **项目 2：自动更正打字软件** 
 
 - [**cats.zip**](https://cs61a.org/proj/cats/cats.zip)
 

@@ -15,7 +15,7 @@ sidebar_position: 2
 
 :::
 
-# **项目 1：CS 61A 猪的游戏**
+# **项目 1：猪的游戏**
 
 - [**hog.zip**](https://cs61a.org/proj/hog/hog.zip)
 

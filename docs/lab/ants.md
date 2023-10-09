@@ -14,7 +14,7 @@ sidebar_position: 4
 掌握Python这门语言，为后续的实践课程打下坚实的基础。
 
 :::
-# **项目 3：CS 61A 蚂蚁大战蜜蜂**
+# **项目 3：蚂蚁大战蜜蜂**
 
 - [**ants.zip**](https://cs61a.org/proj/ants/ants.zip)
 

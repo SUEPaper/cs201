@@ -18,12 +18,23 @@ sidebar_position: 2
 7. 提问模版：https://ysyx.oscc.cc/docs/misc/ask.html
 8.  “大学除了专业知识，还应该学些什么？” 南京大学《SICP》课堂李樾老师的絮絮叨叨：https://www.bilibili.com/video/BV1uR4y167pA/
 
+## 环境搭建
+
+**请在上课前安装好Python的环境和VS Code的开发环境**
+
+[Python 安装教程](../category/安装)
+
+[VS Code 安装教程](../category/开发环境)
+
 ## 课程实验
 
+本课程最终为三个大实验分别为，大家需要完成这三个大实验，并且提交一份实验报告。
 
+1. [The Game of Hog](../lab/hog.md)
+2. [Autocorrected Typing Software](../lab/cats.md)
+3. [Ants Vs. SomeBees](../lab/ants.md)
 
 ### 实验报告
-
 
 
 ## 关于遇到问题的搜索
