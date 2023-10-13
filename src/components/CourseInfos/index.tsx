@@ -31,13 +31,13 @@ function CourseInfos(): JSX.Element {
                 <div className="mt-5 ml-14">
                     <FontAwesomeIcon icon={faClock} /> 
                     <span className="text-xl ml-2 font-bold">时间：</span> 
-                    <p className="inline-block">周二下午1:20 ～ 晚上 8:25</p>
+                    <p className="inline-block">1—9节(10月15日,10月22日,11月5日,11月12日,11月19日)</p>
                 </div>
 
                 <div className="my-5 ml-14">
                     <FontAwesomeIcon icon={faLocationDot} /> 
                     <span className="text-xl ml-3 font-bold">地点：</span>
-                    <p className="inline-block">临港一教408第四机房</p>
+                    <p className="inline-block">临港一教407第三机房</p>
                 </div>
             </div>
         </div>
