@@ -13,17 +13,28 @@ sidebar_position: 3
 
 :::
 
-## 安装C编译器
+## 安装Homebrew
+
+打开MacOS的命令行工具，输入如下命令。
 
 ```bash
-xcode-select --install
+/bin/bash -c "$(curl -fsSL https://cdn.jsdelivr.net/gh/ineo6/homebrew-install/install.sh)"
 ```
 
-## 配置Homebrew 环境变量
-安装完成Homebrew后，需将其所在路径插入到PATH环境变量的最前面，即在您所登录用户的 ~/.profile 文件末尾加上这一行：
+:::tip
+
+安装时需要输入密码，该密码为你的MacOS的开机密码。
+
+:::
+
+安装完成Homebrew后，需要将Homebrew的路径配置到PATH环境变量中，请在命令行工具中输入如下三个命令。
 
 ```bash
-export PATH=/usr/local/bin:/opt/homebrew/bin:$PATH
+echo 'export PATH=/usr/local/bin:/opt/homebrew/bin:$PATH' >> ~/.bash_profile
+
+echo 'export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"' >> ~/.bash_profile
+
+source ~/.bash_profile
 ```
 
 :::note
