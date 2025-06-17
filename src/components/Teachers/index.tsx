@@ -25,7 +25,7 @@ function Teachers(): JSX.Element {
                             <td className="border-0 bg-white">孙园</td>
                             <td className="border-0 bg-white">周三 2:00-3:00pm</td>
                             <td className="border-0 bg-white">临港B2楼A408室</td>
-                            <td className="border-0 bg-white">combmathe@163.com</td>
+                            <td className="border-0 bg-white">combmathe@shiep.edu.cn</td>
                         </tr>   
                         <tr className="border-0">
                             <td className="border-0 bg-white"><img className="rounded-full max-w-20 max-h-20 object-cover" src={EarthImageUrl}/></td>
